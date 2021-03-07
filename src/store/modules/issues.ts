@@ -1,6 +1,5 @@
 import axios from "axios";
 import { ActionTree, GetterTree, MutationTree } from "vuex";
-import { RootState } from "..";
 
 export type Issue = {
   id: number;
@@ -9,7 +8,7 @@ export type Issue = {
   createdOn: string;
 };
 
-type State = {
+export type State = {
   loading: boolean;
   issues: Issue[];
 };
@@ -35,7 +34,7 @@ const state: State = {
 };
 
 // getters
-const getters: GetterTree<State, RootState> = {
+const getters: GetterTree<State, State> = {
   issues: state => {
     return state.issues;
   },
@@ -43,7 +42,7 @@ const getters: GetterTree<State, RootState> = {
 };
 
 // actions
-const actions: ActionTree<State, RootState> = {
+const actions: ActionTree<State, State> = {
   async getIssues({ commit }): Promise<Issue[]> {
     let issues: Issue[] = [];
     commit("setLoading", true);

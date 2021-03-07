@@ -20,8 +20,7 @@
 <script lang="ts">
 import Search from "@/components/Search.vue";
 import IssueCard from "@/components/IssueCard.vue";
-import { createNamespacedHelpers } from "vuex";
-const { mapGetters, mapActions } = createNamespacedHelpers("issues");
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "home",
@@ -30,13 +29,15 @@ export default {
     IssueCard
   },
   computed: {
-    ...mapGetters(["issues", "loading"])
+    ...mapGetters("issues", ["issues", "loading"])
+  },
+  mounted() {
+    (this as any).getData();
   },
   methods: {
-    ...mapActions(["getIssues"])
-  },
-  async created() {
-    await this.getIssues();
+    getData() {
+      (this as any).$store.dispatch("issues/getIssues");
+    }
   }
 };
 </script>
