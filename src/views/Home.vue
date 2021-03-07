@@ -20,7 +20,7 @@
 <script lang="ts">
 import Search from "@/components/Search.vue";
 import IssueCard from "@/components/IssueCard.vue";
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   name: "home",
@@ -32,10 +32,12 @@ export default {
     ...mapGetters("issues", ["issues", "loading"])
   },
   mounted() {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (this as any).getData();
   },
   methods: {
     getData() {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (this as any).$store.dispatch("issues/getIssues");
     }
   }

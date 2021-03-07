@@ -5,13 +5,13 @@
         <v-card-text align="center" class="mx-0 py-0 red--text font-weight-bold"
           >Github owner
           <v-card-text class="pa-0">
-            <a href="https://github.com/lediepts">lediepts</a>
+            <a target="_blank" href="https://github.com/lediepts">lediepts</a>
           </v-card-text>
         </v-card-text>
         <v-card-text align="center" class="mx-0 pb-0 red--text font-weight-bold"
           >Github repo
           <v-card-text class="pa-0">
-            <a href="https://github.com/lediepts/redmine-issues"
+            <a target="_blank" href="https://github.com/lediepts/redmine-system"
               >redmine-issues</a
             >
           </v-card-text>
