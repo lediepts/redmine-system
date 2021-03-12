@@ -1,3 +1,5 @@
+[![CI](https://github.com/lediepts/redmine-system/actions/workflows/blank.yml/badge.svg?branch=main)](https://github.com/lediepts/redmine-system/actions/workflows/blank.yml)
+
 # redmine-search-system
 
 ## Project setup
