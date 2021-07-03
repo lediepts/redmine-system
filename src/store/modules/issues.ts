@@ -16,21 +16,7 @@ export type State = {
 // initial state
 const state: State = {
   loading: false,
-  issues: [
-    // {
-    //   description: "sasa",
-    //   id: 1222,
-    //   journals: {
-    //     createdOn: "dsds",
-    //     id: 2,
-    //     note: "dasds",
-    //     user: {
-    //       id: 2
-    //     }
-    //   },
-    //   subject: "dsdsds"
-    // }
-  ]
+  issues: []
 };
 
 // getters
