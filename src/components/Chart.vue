@@ -70,7 +70,9 @@ export default {
           {
             label: "GitHub Commits",
             backgroundColor: "#f87979",
-            data: new Array(12).fill("").map(() => Math.random() * 1000 + 200)
+            data: new Array(12)
+              .fill("")
+              .map(() => Math.round(Math.random() * 1000) + 200)
           }
         ]
       },
