@@ -1,7 +1,6 @@
 <template>
   <div class="small">
-    <LineChart></LineChart>
-    <button>Randomize</button>
+    <LineChart height="300"></LineChart>
   </div>
 </template>
 
