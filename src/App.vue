@@ -14,6 +14,7 @@
       <v-tabs>
         <v-tab to="/" class="title">{{ name }} {{ version }}</v-tab>
         <v-tab to="/about">About</v-tab>
+        <v-tab to="/chart">Chart</v-tab>
       </v-tabs>
       <v-spacer></v-spacer>
 

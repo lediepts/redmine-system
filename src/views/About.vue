@@ -29,7 +29,17 @@
             <a href="mailto:dieplh.elite@gmail.com">dieplh.elite@gmail.com</a>
           </v-card-text>
         </v-card-text>
-      </v-card-subtitle></v-card
-    >
+      </v-card-subtitle>
+      <div v-html="html"></div>
+    </v-card>
   </v-container>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      html: "<span style='color:red;'></span>"
+    };
+  }
+};
+</script>
